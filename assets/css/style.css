@@ -1,0 +1,160 @@
+/* (A) ENTIRE PAGE */
+body {
+	padding: 20px;
+}
+
+#canvass * { font-family: arial, sans-serif; }
+.ninja { display: none !important; }
+
+/* (B) CONTAINER */
+/* width set to 800px because unresolved wrap */
+#canvass { max-width: 800px; }
+
+
+/* (C) PERIOD SELECTOR */
+#cal-date { display: flex; }
+
+
+/* month & year selection */
+#cal-mth, #cal-yr {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: 1px solid #000000, 0;
+}
+
+
+/* (D) CALENDAR */
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+/* heading color and background SUN - SAT */
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #FF0000;
+  padding: 15px;
+  text-align: center;
+}
+
+
+#calendar tr.day td {
+  border: 1px solid #000000;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+
+
+#calendar tr.day td:hover {
+  background: #fff9e4;
+  cursor: pointer;
+}
+
+
+/* blank days */
+#calendar tr td.blank {
+  background: #FFA500;      /* #f5f5f5; */
+}
+
+
+/* current day/date */
+#calendar tr td.today {
+  background: #A9A9A9;     /* #ffdede; */
+}
+
+
+/* days of the month letters - heading */
+#calendar .dd {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+
+/* days of the month heading - background */
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #FF0000;
+}
+
+
+/* (E) ADD/EDIT EVENT */
+#cal-event {
+  padding: 15px;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+}
+
+
+#cal-event h1 {
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+
+#evt-date {
+  color: #000000;
+  margin: 10px 0;
+}
+
+
+/* input data here */
+#cal-event textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000;
+  min-height: 100px;
+}
+
+
+/* three buttons */
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: 0;
+  background: #00008B;  /* #ea4c4c; */
+  color: #FFFFFF;
+}
+
+
+/* mobile phone = portrait */
+@media screen and (max-width:479px){
+	body {background: #DDA0DD /Plum*/;}
+}
+
+
+/* mobile phone = landscape */
+@media screen and (min-width:480px) and (max-width:767px){
+	body {background: #F0E68C /*khaki*/ ;}
+}
+
+
+/* tablet = portrait triggered at 959px */
+@media screen and (min-width:768px) and (max-width:959px){
+	body {background: #800080 /*teal*/;}
+}
+
+
+/* all mobile phone sizes triggered at 767*/
+@media screen and (max-width:767px){
+	body {background: #808080 /*Gray*/;}
+}
+
+
+/* global styles = 960px or larger trigged at 960 */
+@media screen and (min-width:960px){
+	body {background: #FFFFFF /*White*/;}
+}

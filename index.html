@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="view-port" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Daily Calendar</title> 
+  </head>
+    
+  <body>
+      <br>
+      <h1>A Daily Calendar.</h1>
+      <br>
+      <h1>Select a Month and Year.</h1>
+      <br>
+    <div id="canvass">
+      <!-- (A) PERIOD SELECTOR -->
+      <div id="cal-date">
+        <select id="cal-mth"></select>
+        <select id="cal-yr"></select>
+      </div>
+
+      <!-- (B) CALENDAR -->
+      <div id="cal-container"></div>
+
+      <!-- (C) EVENT FORM -->
+      <form id="cal-event">
+        <h1 id="evt-head"></h1>
+        <div id="evt-date"></div>
+        <textarea id="evt-details" required></textarea>
+        <input id="evt-close" type="button" value="Close"/>
+        <input id="evt-del" type="button" value="Delete"/>
+        <input id="evt-save" type="submit" value="Save"/>
+      </form>
+        <br>
+        <h1>Input Page will open here.  Click on a Date.</h1>
+    </div>
+      
+    <script async src="./assets/js/external.js"></script>
+  </body>
+</html>
